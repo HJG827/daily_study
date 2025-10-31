@@ -6,7 +6,7 @@ words = [input().strip() for _ in range(N)]
 
 words = list(set(words))
 words.sort()
-words = sorted(words, key=len)
+words.sort(key=len)
 
 for i in range(len(words)):
     print(words[i])
