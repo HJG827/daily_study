@@ -5,11 +5,20 @@ N = int(input())
 M = int(input())
 S = input()
 
-P = "I" + N * "OI"
+i = 0
+cnt = 0
 ans = 0
 
-for i in range(M - len(P) + 1):
-    if S[i : i + len(P)] == P:
-        ans += 1
+while i < M - 2:
+    if S[i : i + 3] == "IOI":
+        cnt += 1
+        i += 2
+
+        if cnt >= N:
+            ans += 1
+    
+    else:
+        cnt = 0
+        i += 1
 
 print(ans)
