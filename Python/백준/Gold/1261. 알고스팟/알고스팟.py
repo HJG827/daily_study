@@ -27,10 +27,14 @@ while q:
             and 0 <= nc < M
         ):
             
-            nd = dist[r][c] + arr[nr][nc]
+            dd = arr[nr][nc]
+            nd = dist[r][c] + dd
 
             if nd < dist[nr][nc]:
                 dist[nr][nc] = nd
-                q.append((nr, nc))
+                if dd == 0:
+                    q.appendleft((nr, nc))
+                elif dd == 1:
+                    q.append((nr, nc))
 
 print(dist[N-1][M-1])
