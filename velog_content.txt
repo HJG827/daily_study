@@ -1,10 +1,4 @@
-[title]
-
-[백준/Python]  (실버IV)
-
-[content]
-
-[문제 링크](https://www.acmicpc.net/problem/2417)
+> [문제 링크](https://www.acmicpc.net/problem/2417)
 
 # 1. 문제
 
@@ -13,7 +7,6 @@
 
 
 ### 출력
-
 
 
 ### 예제 입력
