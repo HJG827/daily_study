@@ -1,0 +1,27 @@
+function solution(n) {
+    var answer = 0;
+    
+    let left = 1;
+    let right = 1;
+    let sum = 1;
+    
+    while (left <= n) {
+        if (sum == n) {
+            answer += 1;
+            sum -= left
+            left++
+        } else if (sum < n) {
+            right++
+            sum += right
+        } else {
+            sum -= left
+            left++
+        }
+    
+    }
+    
+    
+    return answer;
+    
+    
+}
